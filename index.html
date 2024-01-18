@@ -1,120 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rucha Ikare :)</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rucha Ikare</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rucha</h1>
+        <p class="section__text__p2">Coder and developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rucha-ikare/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Ruch13'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>currently <br />Intern at Codsoft</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Second year UG student<br />B.tech Information Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a second-year student, I have a fervor for UI/UX design and am in the process of honing my coding and development skills. With a passion for creating engaging user experiences, I am committed to learning and growing in both design and coding realms.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+   
+    <section id="projects">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TidyBlue (Web)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tidyblue.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Eco-Era (App)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+         
+        </div> 
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    <section id="skills">
+      <p class="section__text__p1">here are My</p>
+      <h1 class="title">skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title"></h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/letter-c.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/cpp.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CPP</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/algorithm (1).png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DSA</h3>
+                 
+                </div>
+              </article>
+             
+              
+              <article>
+                <img
+                  src="./assets/html (2).png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p></p>
+                </div>
+              </article>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rucha Ikare</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-  
-</head>
+              <article>
+                <img
+                  src="./assets/css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p></p>
+                </div>
+              </article>
 
-<body>
- <header>
-  <nav> <div class="left">
-    <a href="https://www.linkedin.com/in/rucha-ikare-b569a6278/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-  <a href="https://github.com/Ruch13" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-</div>
-    <div class="right">
-      <ul>
-        <li><a href="#first" style="color: rgb(21, 2, 42);" >Home</a></li>
-        <li><a href="#about" style="color: rgb(21, 2, 42);">About me</a></li>
-        <li><a href="#skills" style="color: rgb(21, 2, 42);">skills</a></li>
-        <li><a href="#Achievements" style="color: rgb(21, 2, 42);">Achievements</a></li>
-        
-      </ul>
-    </div>
-    
-  </nav>
- </header>
- <main>
-  <section class="first" id="first" >
-    <div class="leftsection" style="height: 100%;">
-      Hello!
-      I'm <span class="purple"><b>Rucha </b></span>
-      <div>and I'm a passionate</div>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Dart</h3>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title"></h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/git-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sql.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/figma (2).png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">rucha13ikare@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href='https://www.linkedin.com/in/rucha-ikare/'>LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
       
-      <div id="three" >Web developer and designer</div>
-      <a href="/Resumef.pdf" class="x">
-      <button class="btn" >Resume
-      </a> 
-      </button>
-      <span id="element"></span>
-    </div>
-    
-    <div class="rightsection"><img src="/images/xx.png" alt="profile pic" srcset=""></div>
-     
-  </section>
- 
- </main>
- 
-
-
-<section class="about" id="about">
-  <div style="height: 750px;">
-  <h1>About me</h1>
-  <p>I'm an aspiring web developer who's quite
-    interested in both startup and corporate cultures.
-    I have strong communication and leadership
-    skills, a knack for decision-making, and solid
-    management abilities. </p>
-  <br>
-  <br><br>
-  <h2>Education</h2>
-  <h3>Walchand College Of Engineering ,Sangli</h3>
-  <p>B.tech Information Technology <br>
-    2022-26</p>
-    <h3>Sanjay Ghodavat Junior College, Atigre</h3>
-  <p>HSC <br>
-    2020-22</p>
-  </div>
-</section>
-
-  <section class="skills" id="skills">
-    <div style="height: 750px;">
-   <h1>Skills</h1>
-   
-   
-    <div class="row">
-      <div class="column">
-        <img src="/images/icons8-html-100.png" alt="html" style="width:100%"></a>
-      </div>
-      <div class="column">
-        <img src="/images/icons8-css-100.png" alt="css" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="/images/icons8-javascript-100.png" alt="js" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="/images/icons8-figma-100.png" alt="figma" style="width:100%">
-      </div>
-    </div>
-  </div>
-  </section>
-  
-  <section class="Achievements" id="Achievements">
-    <div style="height: 750px;">
-    <ul><h1>Achievements</h1></ul>
-     <li>WCE ACM hackathon winner (Novice Track)</li>
-     
-      <img src="/images/certificate.jpeg" alt=""  >
-     
-     
-      <img src="/images/acm ph.jpeg" alt="" >
-    
-    <br></div>
-  </section>
-
-  
-  <!-- <script src="script.js"></script> -->
-  
-  
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
-
